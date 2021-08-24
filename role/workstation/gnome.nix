@@ -1,7 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  xdg.portal.enable = true;
   services.xserver.enable = true;
   services.xserver.autorun = true;
   services.xserver.useGlamor = true;

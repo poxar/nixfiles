@@ -20,6 +20,7 @@
 
   services.openssh.enable = true;
   services.flatpak.enable = true;
+  xdg.portal.enable = true;
 
   services.postgresql.enable = true;
   services.postgresql.package = pkgs.postgresql_13;
