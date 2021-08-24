@@ -8,6 +8,7 @@
       ./sound.nix
       ./fonts.nix
       ./gnome.nix
+      ./beekeeper.nix
     ];
 
   boot.plymouth.enable = true;
