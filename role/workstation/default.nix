@@ -7,7 +7,7 @@
       ./input.nix
       ./sound.nix
       ./fonts.nix
-      ./gnome.nix
+      ./dwl.nix
       ./beekeeper.nix
     ];
 
