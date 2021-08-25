@@ -15,5 +15,6 @@
     gnomeExtensions.noannoyance
     gnomeExtensions.run-or-raise
     gnomeExtensions.tiling-assistant
+    gnomeExtensions.syncthing-indicator
   ];
 }

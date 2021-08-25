@@ -8,7 +8,9 @@
       ./sound.nix
       ./fonts.nix
       ./gnome.nix
+
       ./beekeeper.nix
+      ./syncthing.nix
     ];
 
   boot.plymouth.enable = true;
@@ -68,8 +70,6 @@
     inkscape # vector graphic editing
     obs-studio # streaming & video recording
     pdfarranger # merge/split/reorder pdfs
-    seafile-client # file synchronisation
-    seafile-shared # file synchronisation
     weechat # irc client
   ];
 }
