@@ -10,6 +10,9 @@
       ./xdg-basedir.nix
 
       ./gnome.nix
+      ../../mod/sway
+      ../../mod/xmonad
+      ../../mod/dwm
 
       ./beekeeper.nix
       ./syncthing.nix
