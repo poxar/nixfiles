@@ -28,6 +28,8 @@
     mosh # ssh with roaming
     ncdu # disk analyzer
     nmap # port scanner
+    p7zip # 7z compression
+    pigz # parallel gzip
     ripgrep # opinionated grep replacement
     sd # opinionated sed replacement
     skim # fuzzy finder
