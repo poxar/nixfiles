@@ -20,6 +20,12 @@
   networking.networkmanager.enable = true;
   networking.firewall.allowedTCPPorts = [ 22 ];
 
+  services.logind.extraConfig = ''
+    LidSwitchIgnoreInhibited=yes
+    HandleLidSwitch=hybrid-sleep
+    HandleLidSwitchExternalPower=suspend
+  '';
+
   services.openssh.enable = true;
   xdg.portal.enable = true;
 
