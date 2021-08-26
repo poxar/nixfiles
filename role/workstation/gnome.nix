@@ -8,12 +8,17 @@
   services.xserver.displayManager.gdm.wayland = true;
   services.xserver.desktopManager.gnome.enable = true;
 
+  # Fixes alacritty display
+  environment.sessionVariables.WINIT_UNIX_BACKEND = "x11";
+
   environment.systemPackages = with pkgs; [
+    gcolor3
     gnome.gnome-tweaks
     gnomeExtensions.audio-output-switcher
-    gnomeExtensions.noannoyance
+    gnomeExtensions.espresso
+    gnomeExtensions.just-perfection
     gnomeExtensions.run-or-raise
-    gnomeExtensions.tiling-assistant
     gnomeExtensions.syncthing-indicator
+    gnomeExtensions.tiling-assistant
   ];
 }
