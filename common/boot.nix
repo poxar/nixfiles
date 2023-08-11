@@ -6,7 +6,8 @@
     configurationLimit = 10;
   };
 
+  boot.loader.timeout = 0;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.cleanTmpDir = true;
-  boot.tmpOnTmpfs = true;
+  boot.tmp.cleanOnBoot = true;
+  boot.tmp.useTmpfs = true;
 }

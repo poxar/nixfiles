@@ -2,7 +2,15 @@
 
 {
   networking.hostName = "leonis";
+  security.pam.enableFscrypt = true;
   nix.nrBuildUsers = 64;
+
+  systemd.sleep.extraConfig = ''
+    AllowSuspend=no
+    AllowHibernation=no
+    AllowSuspendThenHibernate=no
+    AllowHybridSleep=no
+  '';
 
   imports =
     [

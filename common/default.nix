@@ -4,6 +4,9 @@
   nixpkgs.config.allowUnfree = true;
   programs.command-not-found.enable = true;
 
+  programs.git.enable = true;
+  programs.git.lfs.enable = true;
+
   imports =
     [
       ./nix.nix
@@ -23,6 +26,7 @@
     file # inspect file type
     htop # system monitor
     iperf # measure network bandwidth
+    libarchive # provides bsdtar
     lsof # list open files and sockets
     moreutils # additional tooling
     mosh # ssh with roaming

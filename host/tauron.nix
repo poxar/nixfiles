@@ -2,12 +2,36 @@
 
 {
   networking.hostName = "tauron";
+  security.pam.enableFscrypt = true;
 
-  # This somehow didn't get picked up by the hardware scan...
-  boot.initrd.luks.devices.crypt = {
-    device = "/dev/disk/by-uuid/10d8e50f-2b95-499a-92d8-bdb8de83e8c6";
-    preLVM = true;
-    allowDiscards = true;
+  services.logind.extraConfig = ''
+    LidSwitchIgnoreInhibited=yes
+    HandleLidSwitch=suspend-then-hibernate
+    HandleLidSwitchExternalPower=suspend-then-hibernate
+  '';
+
+  services.keyd = {
+    enable = true;
+    settings = {
+      main = {
+        capslock = "overload(control, esc)";
+        leftalt = "layer(leftalt)";
+        leftmeta = "layer(leftmeta)";
+      };
+      "leftalt:A" = {
+        h = "left";
+        j = "down";
+        k = "up";
+        l = "right";
+      };
+      "leftmeta:M" = {
+        h = "home";
+        j = "pagedown";
+        k = "pageup";
+        l = "end";
+        s = "macro(M-right 10ms A-tab 10ms M-left 10ms A-tab)";
+      };
+    };
   };
 
   imports =

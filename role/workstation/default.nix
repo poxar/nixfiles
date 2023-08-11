@@ -8,11 +8,9 @@
       ./sound.nix
       ./fonts.nix
       ./xdg-basedir.nix
+      ./syncthing.nix
 
       ./gnome.nix
-
-      ./beekeeper.nix
-      ./syncthing.nix
     ];
 
   boot.plymouth.enable = true;
@@ -20,47 +18,40 @@
   networking.networkmanager.enable = true;
   networking.firewall.allowedTCPPorts = [ 22 ];
 
-  services.logind.extraConfig = ''
-    LidSwitchIgnoreInhibited=yes
-    HandleLidSwitch=hybrid-sleep
-    HandleLidSwitchExternalPower=suspend
-  '';
+  services.avahi.nssmdns = true;
 
   services.openssh.enable = true;
   xdg.portal.enable = true;
 
-  services.postgresql.enable = true;
-  services.postgresql.package = pkgs.postgresql_13;
-  environment.sessionVariables.PSQL_HISTORY = "$HOME/.local/state/psql/history";
+  # services.postgresql.enable = true;
+  # services.postgresql.package = pkgs.postgresql_13;
+  # environment.sessionVariables.PSQL_HISTORY = "$HOME/.local/state/psql/history";
 
-  services.mysql.enable = true;
-  services.mysql.package = pkgs.mariadb;
-  services.mysql.bind = "127.0.0.1";
-  environment.sessionVariables.MYSQL_HISTFILE = "$HOME/.local/state/mysql/history";
+  # services.mysql.enable = true;
+  # services.mysql.package = pkgs.mariadb;
+  # services.mysql.bind = "127.0.0.1";
+  # environment.sessionVariables.MYSQL_HISTFILE = "$HOME/.local/state/mysql/history";
 
   environment.sessionVariables.TERMINAL = ["alacritty"];
   environment.systemPackages = with pkgs; [
     ## various tools
     acpi # battery status
-    aria # commandline torrent client
     autossh # automatically reconnect to ssh
     dateutils # various tools for date manipulation
     ddcutil # monitor configuration
     hyperfine # benchmarking tool
     pandoc # document converter
-    proselint # linter for prose
     pwgen # password generator
+    rbw # bitwarden client
     rclone # rsync for cloud services
     stress # stress testing tool
-    units # unit converstion
+    units # unit conversion
     wl-clipboard # commandline wayland clipboard access
     youtube-dl # youtube downloader
 
     ## development tools
-    bear # automatic generation of clangd configuration
     direnv # automatic commands per directory
     entr # automatically run commands when files change
-    git # vcs
     httpie # cli http api client
     jq # cli json tool
     mitmproxy # network debugging
@@ -70,13 +61,10 @@
     tig # git tui
     tokei # sloc tool
     universal-ctags # a maintained ctags
-    zeal # offline documentation browser
 
     ## languages & tooling
-    # ususally I use shell.nix to install languages and their tooling,
-    # but these I just want to have available for quick scripting and stuff
-    python39
-    pyright
+    # languages I want to always have access to
+    python3Full
 
     ## gui software
     alacritty # terminal emulator
@@ -85,15 +73,16 @@
     foliate # ebook reader
     gnucash # accounting software
     inkscape # vector graphic editing
+    libreoffice-fresh # documents & co
     obs-studio # streaming & video recording
-    onlyoffice-bin # document/spreadsheet editor
     pdfarranger # merge/split/reorder pdfs
+    seafile-client # file synchronisation
     spotify # music streaming
+    zoom-us # videoconferencing
 
     ## chat software
     discord
     signal-desktop
     tdesktop
-    weechat
   ];
 }
