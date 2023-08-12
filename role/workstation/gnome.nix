@@ -18,6 +18,7 @@
     gnomeExtensions.espresso
     gnomeExtensions.run-or-raise
     gnomeExtensions.tiling-assistant
+    pika-backup
     pinentry-gnome
   ];
 }
