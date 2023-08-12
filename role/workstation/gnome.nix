@@ -7,20 +7,20 @@
   services.xserver.displayManager.gdm.wayland = true;
   services.xserver.desktopManager.gnome.enable = true;
 
-  # needed for espanso
+  # needed for espanso-wayland
   users.users.pmi.extraGroups = [ "input" ];
 
   environment.systemPackages = with pkgs; [
-    amberol
-    emote
-    espanso-wayland
-    gnome-solanum
-    gnome.gnome-tweaks
-    gnomeExtensions.espresso
-    gnomeExtensions.run-or-raise
-    gnomeExtensions.tiling-assistant
-    pika-backup
-    pinentry-gnome
+    amberol # music player
+    emote # emoji picker
+    espanso-wayland # global text expansion
+    gnome-solanum # pomodoro timer
+    gnome.gnome-tweaks # some additional gnome settings
+    gnomeExtensions.espresso # keep the screen alive
+    gnomeExtensions.run-or-raise # mighty shortcut manager
+    gnomeExtensions.tiling-assistant # manual tiling
+    pika-backup # borg backup frontend
+    pinentry-gnome # only here explictily for rbw
   ];
 
   environment.gnome.excludePackages = with pkgs; [
