@@ -11,6 +11,7 @@
   users.users.pmi.extraGroups = [ "input" ];
 
   environment.systemPackages = with pkgs; [
+    amberol
     emote
     espanso-wayland
     gnome-solanum
@@ -20,5 +21,9 @@
     gnomeExtensions.tiling-assistant
     pika-backup
     pinentry-gnome
+  ];
+
+  environment.gnome.excludePackages = with pkgs; [
+    gnome.gnome-music
   ];
 }
