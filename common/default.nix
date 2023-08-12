@@ -37,6 +37,7 @@
     ripgrep # opinionated grep replacement
     sd # opinionated sed replacement
     skim # fuzzy finder
+    sqlite # simple database
     stow # symlink farm manager
     tmux # terminal multiplexer
     tmuxp # tmux session manager
