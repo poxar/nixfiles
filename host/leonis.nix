@@ -19,5 +19,6 @@
       ../hardware/amd/gpu.nix
       ../hardware/ssd.nix
       ../role/workstation
+      ../role/workstation/gaming.nix
     ];
 }
