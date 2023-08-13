@@ -20,5 +20,6 @@
       ../hardware/ssd.nix
       ../role/workstation
       ../role/workstation/gaming.nix
+      ../home
     ];
 }

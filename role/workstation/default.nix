@@ -21,18 +21,7 @@
   services.avahi.nssmdns = true;
 
   services.openssh.enable = true;
-  xdg.portal.enable = true;
 
-  # services.postgresql.enable = true;
-  # services.postgresql.package = pkgs.postgresql_13;
-  # environment.sessionVariables.PSQL_HISTORY = "$HOME/.local/state/psql/history";
-
-  # services.mysql.enable = true;
-  # services.mysql.package = pkgs.mariadb;
-  # services.mysql.bind = "127.0.0.1";
-  # environment.sessionVariables.MYSQL_HISTFILE = "$HOME/.local/state/mysql/history";
-
-  environment.sessionVariables.TERMINAL = ["alacritty"];
   environment.systemPackages = with pkgs; [
     ## various tools
     acpi # battery status
@@ -67,7 +56,6 @@
     python3Full
 
     ## gui software
-    alacritty # terminal emulator
     chromium # browser
     firefox-wayland # browser
     foliate # ebook reader
