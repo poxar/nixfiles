@@ -160,10 +160,10 @@ with lib.hm.gvariant;
       last-version-installed = 40;
       maximize-with-gap = false;
       restore-window = [ "<Super>Down" ];
-      screen-bottom-gap = 10;
-      screen-left-gap = 10;
-      screen-right-gap = 10;
-      screen-top-gap = 10;
+      screen-bottom-gap = 12;
+      screen-left-gap = 12;
+      screen-right-gap = 12;
+      screen-top-gap = 12;
       search-popup-layout = [ "<Super>semicolon" ];
       show-layout-panel-indicator = false;
       single-screen-gap = 20;
@@ -189,7 +189,7 @@ with lib.hm.gvariant;
       tile-topright-quarter-ignore-ta = [];
       toggle-always-on-top = [];
       toggle-tiling-popup = [];
-      window-gap = 10;
+      window-gap = 12;
     };
 
     "org/gnome/shell/weather" = {
