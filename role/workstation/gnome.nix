@@ -8,8 +8,6 @@
   services.xserver.desktopManager.gnome.enable = true;
 
   environment.sessionVariables = {
-    # Hint electron apps to use wayland
-    NIXOS_OZONE_WL = "1";
     # Fix various issues with alacritty
     WINIT_UNIX_BACKEND = "x11";
   };
