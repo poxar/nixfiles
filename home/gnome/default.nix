@@ -18,6 +18,7 @@ with lib.hm.gvariant;
     gnomeExtensions.espresso # keep the screen alive
     gnomeExtensions.run-or-raise # mighty shortcut manager
     gnomeExtensions.tiling-assistant # manual tiling
+    gnomeExtensions.transparent-top-bar-adjustable-transparency
   ];
 
   home.file.".config/tiling-assistant/layouts.json".source = ./tiling-assistant.json;
@@ -122,7 +123,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell" = {
-      enabled-extensions = [ "windowsNavigator@gnome-shell-extensions.gcampax.github.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "tiling-assistant@leleat-on-github" "run-or-raise@edvard.cz" ];
+      enabled-extensions = [ "windowsNavigator@gnome-shell-extensions.gcampax.github.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "tiling-assistant@leleat-on-github" "run-or-raise@edvard.cz" "transparent-top-bar@ftpix.com" ];
       favorite-apps = [ "Alacritty.desktop" "firefox.desktop" "org.gnome.Nautilus.desktop" "org.gnome.Calculator.desktop" "org.gnome.Solanum.desktop" "spotify.desktop" "org.telegram.desktop.desktop" "signal-desktop.desktop" "discord.desktop" "steam.desktop" ];
     };
 
