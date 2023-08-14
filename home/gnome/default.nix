@@ -235,6 +235,11 @@ with lib.hm.gvariant;
       window-gap = 12;
     };
 
+    "/org/gnome/shell/extensions/espresso" = {
+      enable-fullscreen = true;
+      show-notifications = false;
+    };
+
     "org/gnome/shell/weather" = {
       automatic-location = true;
       locations = "[<(uint32 2, <('Berlin', 'EDDT', true, [(0.91746141594945008, 0.23241968454167572)], [(0.91658875132345297, 0.23387411976724018)])>)>]";
