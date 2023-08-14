@@ -71,8 +71,25 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/search-providers" = {
-      disabled = [ "org.gnome.Calendar.desktop" "org.gnome.Characters.desktop" "org.gnome.clocks.desktop" "org.gnome.seahorse.Application.desktop" "org.gnome.Epiphany.desktop" ];
-      sort-order = [ "org.gnome.Settings.desktop" "org.gnome.Documents.desktop" "org.gnome.Nautilus.desktop" "org.gnome.Photos.desktop" "org.gnome.Calculator.desktop" "org.gnome.Contacts.desktop" "org.gnome.Calendar.desktop" "org.gnome.Characters.desktop" "org.gnome.clocks.desktop" "org.gnome.seahorse.Application.desktop" ];
+      disabled = [
+        "org.gnome.Calendar.desktop"
+        "org.gnome.Characters.desktop"
+        "org.gnome.clocks.desktop"
+        "org.gnome.seahorse.Application.desktop"
+        "org.gnome.Epiphany.desktop"
+      ];
+      sort-order = [
+        "org.gnome.Settings.desktop"
+        "org.gnome.Documents.desktop"
+        "org.gnome.Nautilus.desktop"
+        "org.gnome.Photos.desktop"
+        "org.gnome.Calculator.desktop"
+        "org.gnome.Contacts.desktop"
+        "org.gnome.Calendar.desktop"
+        "org.gnome.Characters.desktop"
+        "org.gnome.clocks.desktop"
+        "org.gnome.seahorse.Application.desktop"
+      ];
     };
 
     "org/gnome/desktop/wm/keybindings" = {
@@ -125,8 +142,25 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell" = {
-      enabled-extensions = [ "windowsNavigator@gnome-shell-extensions.gcampax.github.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "tiling-assistant@leleat-on-github" "run-or-raise@edvard.cz" "transparent-top-bar@ftpix.com" ];
-      favorite-apps = [ "Alacritty.desktop" "firefox.desktop" "org.gnome.Nautilus.desktop" "org.gnome.Calculator.desktop" "org.gnome.Solanum.desktop" "spotify.desktop" "org.telegram.desktop.desktop" "signal-desktop.desktop" "discord.desktop" "steam.desktop" ];
+      enabled-extensions = [
+        "windowsNavigator@gnome-shell-extensions.gcampax.github.com"
+        "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
+        "tiling-assistant@leleat-on-github"
+        "run-or-raise@edvard.cz"
+        "transparent-top-bar@ftpix.com"
+      ];
+      favorite-apps = [
+        "Alacritty.desktop"
+        "firefox.desktop"
+        "org.gnome.Nautilus.desktop"
+        "org.gnome.Calculator.desktop"
+        "org.gnome.Solanum.desktop"
+        "spotify.desktop"
+        "org.telegram.desktop.desktop"
+        "signal-desktop.desktop"
+        "discord.desktop"
+        "steam.desktop"
+      ];
     };
 
     "org/gnome/shell/app-switcher" = {
@@ -134,7 +168,13 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/auto-move-windows" = {
-      application-list = [ "spotify.desktop:3" "org.telegram.desktop.desktop:2" "signal-desktop.desktop:2" "steam.desktop:3" "discord.desktop:3" ];
+      application-list = [
+        "spotify.desktop:3"
+        "org.telegram.desktop.desktop:2"
+        "signal-desktop.desktop:2"
+        "steam.desktop:3"
+        "discord.desktop:3"
+      ];
     };
 
     "org/gnome/shell/extensions/tiling-assistant" = {
