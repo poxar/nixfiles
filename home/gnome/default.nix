@@ -134,12 +134,13 @@ with lib.hm.gvariant;
 
     "org/gnome/nautilus/list-view" = {
       default-zoom-level = "small";
+      use-tree-view = true;
     };
 
     "org/gnome/nautilus/preferences" = {
       default-folder-viewer = "list-view";
-      search-filter-time-type = "last_modified";
       search-view = "list-view";
+      show-create-link = true;
     };
 
     "org/gnome/shell" = {
