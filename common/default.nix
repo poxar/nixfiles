@@ -24,6 +24,7 @@
     curl # http toolchain
     fd # opinionated find replacement
     file # inspect file type
+    gnumake # venerable build tool and task runner
     htop # system monitor
     iperf # measure network bandwidth
     libarchive # provides bsdtar
