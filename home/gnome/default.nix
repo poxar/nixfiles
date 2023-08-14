@@ -148,6 +148,7 @@ with lib.hm.gvariant;
         "tiling-assistant@leleat-on-github"
         "run-or-raise@edvard.cz"
         "transparent-top-bar@ftpix.com"
+        "espresso@coadmunkee.github.com"
       ];
       favorite-apps = [
         "Alacritty.desktop"
