@@ -13,6 +13,7 @@
     clang-tools # clangd for C
     elmPackages.elm-language-server
     lua-language-server
+    marksman # markdown lsp
     nodePackages.bash-language-server
     nodePackages.typescript-language-server
     nodePackages.vim-language-server
