@@ -27,6 +27,8 @@
     settings.PasswordAuthentication = false;
   };
 
+  services.tailscale.enable = true;
+
   environment.systemPackages = with pkgs; [
     ## various tools
     acpi # battery status
