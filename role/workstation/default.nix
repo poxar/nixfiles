@@ -38,7 +38,6 @@
     hyperfine # benchmarking tool
     pandoc # document converter
     pwgen # password generator
-    rbw # bitwarden client
     rclone # rsync for cloud services
     stress # stress testing tool
     units # unit conversion

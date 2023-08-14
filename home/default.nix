@@ -18,6 +18,7 @@ in {
 
     imports = [
       ./alacritty
+      ./rbw.nix
       ./gnome
     ];
   };
