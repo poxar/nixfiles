@@ -235,7 +235,7 @@ with lib.hm.gvariant;
       window-gap = 12;
     };
 
-    "/org/gnome/shell/extensions/espresso" = {
+    "org/gnome/shell/extensions/espresso" = {
       enable-fullscreen = true;
       show-notifications = false;
     };
