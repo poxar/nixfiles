@@ -20,7 +20,12 @@
 
   services.avahi.nssmdns = true;
 
-  services.openssh.enable = true;
+  services.openssh = {
+    enable = true;
+    startWhenNeeded = true;
+    settings.PermitRootLogin = "no";
+    settings.PasswordAuthentication = false;
+  };
 
   environment.systemPackages = with pkgs; [
     ## various tools
