@@ -42,5 +42,6 @@
       ../hardware/nvidia/disable.nix
       ../hardware/ssd.nix
       ../role/workstation
+      ../home
     ];
 }
