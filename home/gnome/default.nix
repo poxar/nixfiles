@@ -19,6 +19,7 @@ with lib.hm.gvariant;
     gnomeExtensions.run-or-raise # mighty shortcut manager
     gnomeExtensions.tiling-assistant # manual tiling
     gnomeExtensions.transparent-top-bar-adjustable-transparency
+    gnomeExtensions.appindicator # old school tray icons
   ];
 
   home.file.".config/tiling-assistant/layouts.json".source = ./tiling-assistant.json;
@@ -149,6 +150,7 @@ with lib.hm.gvariant;
         "run-or-raise@edvard.cz"
         "transparent-top-bar@ftpix.com"
         "espresso@coadmunkee.github.com"
+        "appindicatorsupport@rgcjonas.gmail.com"
       ];
       favorite-apps = [
         "Alacritty.desktop"
