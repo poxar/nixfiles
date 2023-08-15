@@ -16,6 +16,10 @@ in {
 
     programs.home-manager.enable = true;
 
+    home.packages = with pkgs; [
+      nextcloud-client
+    ];
+
     imports = [
       ./alacritty
       ./rbw.nix
