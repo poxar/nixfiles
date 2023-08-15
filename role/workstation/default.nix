@@ -8,7 +8,6 @@
       ./sound.nix
       ./fonts.nix
       ./xdg-basedir.nix
-      ./syncthing.nix
 
       ./gnome.nix
     ];
