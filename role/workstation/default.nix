@@ -69,7 +69,6 @@
     libreoffice-fresh # documents & co
     obs-studio # streaming & video recording
     pdfarranger # merge/split/reorder pdfs
-    seafile-client # file synchronisation
     spotify # music streaming
     zoom-us # videoconferencing
 
