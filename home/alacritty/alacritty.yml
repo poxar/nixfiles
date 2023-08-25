@@ -15,16 +15,16 @@ font:
   size: 11.0
   builtin_box_drawing: true
   normal:
-    family: Fira Code
+    family: FiraCode Nerd Font
     style: Light
   bold:
-    family: Fira Code
+    family: FiraCode Nerd Font
     style: Medium
   italic:
-    family: Fira Code
+    family: FiraCode Nerd Font
     style: Light Italic
   bold_italic:
-    family: Fira Code
+    family: FiraCode Nerd Font
     style: Medium Italic
 
 colors:

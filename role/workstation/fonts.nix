@@ -5,6 +5,7 @@
 
   fonts.enableDefaultFonts = true;
   fonts.fonts = with pkgs; [
+    (nerdfonts.override { fonts = [ "FiraCode" ]; } )
     fira-code
     inconsolata
     inter
