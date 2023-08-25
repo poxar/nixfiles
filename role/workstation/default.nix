@@ -28,6 +28,8 @@
 
   services.tailscale.enable = true;
 
+  services.fwupd.enable = true;
+
   environment.systemPackages = with pkgs; [
     ## various tools
     acpi # battery status
