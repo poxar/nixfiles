@@ -1,3 +1,5 @@
+{ config, pkgs, ... }:
+
 {
   programs.fish = {
     enable = true;
@@ -10,4 +12,8 @@
       usenix = "echo 'use nix' >> .envrc && direnv allow";
     };
   };
+
+  environment.systemPackages = with pkgs; [
+    fishPlugins.autopair
+  ];
 }
