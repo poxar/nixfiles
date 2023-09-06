@@ -42,6 +42,7 @@
     stow # symlink farm manager
     tmux # terminal multiplexer
     tmuxp # tmux session manager
+    tmuxPlugins.better-mouse-mode
     tree # show directory trees
     up # ultimate plumber - pipe visualisation
     wormhole-william # end-to-end encrypted file transfers
