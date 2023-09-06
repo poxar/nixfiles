@@ -22,8 +22,8 @@ in {
 
     imports = [
       ./alacritty
-      ./rbw.nix
       ./gnome
+      ./rbw.nix
     ];
   };
 }
