@@ -22,6 +22,12 @@
           <test name="family" compare="eq" ignore-blanks="true">
             <string>FiraCode</string>
           </test>
+          <test name="family" compare="eq" ignore-blanks="true">
+            <string>FiraCode Nerd Font</string>
+          </test>
+          <test name="family" compare="eq" ignore-blanks="true">
+            <string>Fira Code</string>
+          </test>
           <edit name="fontfeatures" mode="append">
             <string>cv06 on</string>
             <string>ss02 on</string>

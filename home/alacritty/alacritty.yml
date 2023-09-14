@@ -3,9 +3,6 @@ window:
     x: 5
     y: 5
   dynamic_padding: true
-  decorations: none
-  decorations_theme_variant: Dark
-  startup_mode: Maximized
 
   dimensions:
     columns: 90
@@ -78,7 +75,7 @@ hints:
       mods: Alt
 
 mouse:
-  hide_when_typing: false
+  hide_when_typing: true
 
 key_bindings:
   - { key: N,     mods: Control|Shift,  action: CreateNewWindow,   }
