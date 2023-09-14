@@ -22,7 +22,6 @@ with lib.hm.gvariant;
     gnomeExtensions.espresso # keep the screen alive
     gnomeExtensions.run-or-raise # mighty shortcut manager
     gnomeExtensions.tiling-assistant # manual tiling
-    gnomeExtensions.transparent-top-bar-adjustable-transparency
     gnomeExtensions.appindicator # old school tray icons
   ];
 
