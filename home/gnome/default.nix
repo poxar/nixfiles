@@ -15,12 +15,20 @@ with lib.hm.gvariant;
     video-trimmer # simpler than raw ffmpeg sometimes
     warp # graphical wormhole implementation
 
+    # make qt applications look like gnome
+    adwaita-qt
+    adwaita-qt6
+
     gnomeExtensions.espresso # keep the screen alive
     gnomeExtensions.run-or-raise # mighty shortcut manager
     gnomeExtensions.tiling-assistant # manual tiling
     gnomeExtensions.transparent-top-bar-adjustable-transparency
     gnomeExtensions.appindicator # old school tray icons
   ];
+
+  home.sessionVariables = {
+    QT_STYLE_OVERRIDE = "adwaita";
+  };
 
   home.file.".config/tiling-assistant/layouts.json".source = ./tiling-assistant.json;
   home.file.".config/run-or-raise/shortcuts.conf".source = ./run-or-raise.conf;
