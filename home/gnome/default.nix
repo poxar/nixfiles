@@ -100,6 +100,10 @@ with lib.hm.gvariant;
       switch-windows-backward = [ "<Shift><Alt>Tab" ];
     };
 
+    "org/gnome/desktop/wm/preferences" = {
+      mouse-button-modifier = "<Alt>";
+    };
+
     "org/gnome/evolution-data-server/calendar" = {
       notify-completed-tasks = false;
       notify-enable-audio = false;
