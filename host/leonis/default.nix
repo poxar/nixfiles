@@ -2,7 +2,6 @@
 
 {
   networking.hostName = "leonis";
-  security.pam.enableFscrypt = true;
   nix.nrBuildUsers = 64;
 
   systemd.sleep.extraConfig = ''
@@ -12,14 +11,12 @@
     AllowHybridSleep=no
   '';
 
+  hardware.cpu.amd.updateMicrocode = true;
+  services.fstrim.enable = true;
+  security.pam.enableFscrypt = true;
+
   imports =
     [
-      ../common
-      ../hardware/amd/cpu.nix
-      ../hardware/amd/gpu.nix
-      ../hardware/ssd.nix
-      ../role/workstation
-      ../role/workstation/gaming.nix
-      ../home
+      ./hardware-configuration.nix
     ];
 }

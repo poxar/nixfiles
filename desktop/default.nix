@@ -10,6 +10,7 @@
       ./xdg-basedir.nix
 
       ./gnome.nix
+      ./alacritty.nix
     ];
 
   boot.plymouth.enable = true;
@@ -27,7 +28,6 @@
   };
 
   services.tailscale.enable = true;
-
   services.fwupd.enable = true;
 
   environment.systemPackages = with pkgs; [
@@ -38,10 +38,13 @@
     ddcutil # monitor configuration
     hyperfine # benchmarking tool
     pandoc # document converter
+    pciutils # various programs to deal with pci hardware
     pwgen # password generator
+    rbw # command line bitwarden client
     rclone # rsync for cloud services
     stress # stress testing tool
     units # unit conversion
+    usbutils # various programs to deal with usb hardware
     wl-clipboard # commandline wayland clipboard access
     youtube-dl # youtube downloader
 
@@ -50,11 +53,12 @@
     entr # automatically run commands when files change
     httpie # cli http api client
     jq # cli json tool
+    lazygit # git tui
     mitmproxy # network debugging
     mosquitto # mqtt cli tools
     picocom # serial connection terminal emulator
     shellcheck # shell linter
-    tig # git tui
+    tig # git-log tui
     tokei # sloc tool
     universal-ctags # a maintained ctags
 
@@ -69,6 +73,7 @@
     gnucash # accounting software
     inkscape # vector graphic editing
     libreoffice-fresh # documents & co
+    nextcloud-client # file synchronisation
     obs-studio # streaming & video recording
     pdfarranger # merge/split/reorder pdfs
     spotify # music streaming

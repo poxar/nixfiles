@@ -2,6 +2,9 @@
 
 {
   networking.hostName = "tauron";
+
+  hardware.cpu.intel.updateMicrocode = true;
+  services.fstrim.enable = true;
   security.pam.enableFscrypt = true;
 
   services.logind.extraConfig = ''
@@ -36,12 +39,6 @@
 
   imports =
     [
-      ../common
-      ../hardware/intel/cpu.nix
-      ../hardware/intel/gpu.nix
-      ../hardware/nvidia/disable.nix
-      ../hardware/ssd.nix
-      ../role/workstation
-      ../home
+      ./hardware-configuration.nix
     ];
 }

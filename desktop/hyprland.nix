@@ -3,6 +3,17 @@
 let
   unstable = import <nixos-unstable> {};
 in {
+  services.xserver = {
+    enable = true;
+    autorun = true;
+
+    excludePackages = [ pkgs.xterm ];
+    displayManager = {
+      gdm.enable = true;
+      gdm.wayland = true;
+    };
+  };
+
   programs.hyprland = {
     package = unstable.hyprland;
     enable = true;
@@ -20,9 +31,10 @@ in {
     # (waybar.overrideAttrs (oldAttrs: {
     #   mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
     # }))
+    hyprland-share-picker
+    xdg-desktop-portal-hyprland
     hyprpaper
     dunst
-    foot
     wofi
     rofi-wayland
   ];

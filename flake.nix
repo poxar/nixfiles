@@ -1,18 +1,29 @@
 {
-  description = "My system configuration";
+  description = "My system configurations";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.05";
-    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
-    home-manager.url = "github:nix-community/home-manager";
   };
 
   outputs = { self, nixpkgs, ... }@attrs: {
     nixosConfigurations.leonis = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        /etc/nixos/hardware-configuration.nix
-        ./host/leonis.nix
+        ./host/leonis
+        ./hardware/gpu-amd.nix
+        ./common
+        ./desktop
+        ./gaming
+      ];
+    };
+    nixosConfigurations.tauron = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      modules = [
+        ./host/tauron
+        ./hardware/gpu-intel.nix
+        ./hardware/gpu-nvidia-disable.nix
+        ./common
+        ./desktop
       ];
     };
   };

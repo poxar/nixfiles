@@ -1,5 +1,9 @@
 {
+  programs.command-not-found.enable = true;
+
+  nixpkgs.config.allowUnfree = true;
   nix.settings.auto-optimise-store = true;
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # keep shell.nix derivations
   nix.extraOptions = ''

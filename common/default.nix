@@ -1,8 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  nixpkgs.config.allowUnfree = true;
-  programs.command-not-found.enable = true;
+  system.stateVersion = "23.05";
 
   programs.git.enable = true;
   programs.git.lfs.enable = true;
