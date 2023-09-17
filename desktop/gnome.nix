@@ -31,6 +31,7 @@
     textpieces # simple text transformations
     video-trimmer # simpler than raw ffmpeg sometimes
     warp # graphical wormhole implementation
+    pinentry-gnome # gnomes pinentry implementation
 
     # make qt applications look like gnome
     adwaita-qt
