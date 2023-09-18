@@ -3,8 +3,19 @@
 {
   system.stateVersion = "23.05";
 
-  programs.git.enable = true;
-  programs.git.lfs.enable = true;
+  # TODO: The hardcoded path to the flake is ugly
+  # It sadly is required, since this module generates a faulty command line otherwise
+  # I could instead roll my own service file, sidestepping the whole issue and using
+  # /etc/nixos/flake.nix as intended.
+  system.autoUpgrade = {
+    enable = true;
+    persistent = true;
+    flake = "/home/pmi/Projects/nixfiles";
+    flags = [
+      "--recreate-lock-file"
+      "-L" # print build log
+    ];
+  };
 
   imports =
     [
@@ -14,6 +25,9 @@
       ./fish.nix
       ./neovim.nix
     ];
+
+  programs.git.enable = true;
+  programs.git.lfs.enable = true;
 
   environment.systemPackages = with pkgs; [
     age # modern encryption tool
