@@ -10,6 +10,7 @@
       system = "x86_64-linux";
       modules = [
         ./host/leonis
+        ./hardware/cpu-amd.nix
         ./hardware/gpu-amd.nix
         ./common
         ./desktop
@@ -20,6 +21,7 @@
       system = "x86_64-linux";
       modules = [
         ./host/tauron
+        ./hardware/cpu-intel.nix
         ./hardware/gpu-intel.nix
         ./hardware/gpu-nvidia-disable.nix
         ./common

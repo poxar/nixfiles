@@ -3,7 +3,6 @@
 {
   networking.hostName = "tauron";
 
-  hardware.cpu.intel.updateMicrocode = true;
   services.fstrim.enable = true;
   security.pam.enableFscrypt = true;
 
