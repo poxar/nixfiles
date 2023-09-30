@@ -8,12 +8,14 @@
 
     fonts = with pkgs; [
       (nerdfonts.override { fonts = [ "FiraCode" ]; } )
+      corefonts # microsoft core fonts
       fira-code
       inconsolata
       inter
       joypixels
       noto-fonts
       noto-fonts-cjk
+      vistafonts # more microsoft fonts
     ];
 
     fontconfig.localConf = ''
