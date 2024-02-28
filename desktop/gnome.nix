@@ -21,14 +21,13 @@
 
   environment.systemPackages = with pkgs; [
     amberol # music player
-    dconf2nix # convert dconf dumps to nix
     eyedropper # color picker
     gnome-solanum # pomodoro timer
+    gnome.dconf-editor # graphical dconf editor
     gnome.gnome-tweaks # some additional gnome settings
     khronos # time tracker
     metadata-cleaner # clean metadata from media files
     pika-backup # borg backup frontend
-    textpieces # simple text transformations
     video-trimmer # simpler than raw ffmpeg sometimes
     warp # graphical wormhole implementation
     pinentry-gnome # gnomes pinentry implementation

@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
 {
+  system.stateVersion = "23.05";
+
   networking.hostName = "leonis";
   nix.nrBuildUsers = 64;
 

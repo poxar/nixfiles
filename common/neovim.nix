@@ -22,8 +22,8 @@
     phpactor
     proselint # text linter
     pyright # python
-    python310Packages.python-lsp-server
-    python310Packages.ruff-lsp
+    python311Packages.python-lsp-server
+    ruff-lsp # python
     rust-analyzer
   ];
 }

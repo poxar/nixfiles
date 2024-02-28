@@ -1,8 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  system.stateVersion = "23.05";
-
   # TODO: The hardcoded path to the flake is ugly
   # It sadly is required, since this module generates a faulty command line otherwise
   # I could instead roll my own service file, sidestepping the whole issue and using
@@ -10,7 +8,7 @@
   system.autoUpgrade = {
     enable = true;
     persistent = true;
-    flake = "/home/pmi/Projects/nixfiles";
+    flake = "/home/pmi/Code/nixfiles";
     flags = [
       "--recreate-lock-file"
       "-L" # print build log

@@ -12,17 +12,19 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/faa28d9e-d81c-444e-b2e6-cfed94aadb73";
+    { device = "/dev/disk/by-uuid/d703afb9-9404-4fdb-958d-fb3020168eee";
       fsType = "ext4";
     };
 
+  boot.initrd.luks.devices."luks-43e67c64-17e9-490f-832d-45a0b2cf0499".device = "/dev/disk/by-uuid/43e67c64-17e9-490f-832d-45a0b2cf0499";
+
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/C099-657A";
+    { device = "/dev/disk/by-uuid/FE22-474D";
       fsType = "vfat";
     };
 
   swapDevices =
-    [ { device = "/dev/disk/by-uuid/788cd0e0-d586-4246-a978-fd197714fcf4"; }
+    [ { device = "/dev/disk/by-uuid/445c6498-c385-46ac-9c10-d604ae06d533"; }
     ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
@@ -33,6 +35,5 @@
   # networking.interfaces.wlp60s0.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
-  powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }

@@ -4,9 +4,9 @@
   nixpkgs.config.joypixels.acceptLicense = true;
 
   fonts = {
-    enableDefaultFonts = true;
+    enableDefaultPackages = true;
 
-    fonts = with pkgs; [
+    packages = with pkgs; [
       (nerdfonts.override { fonts = [ "FiraCode" ]; } )
       corefonts # microsoft core fonts
       fira-code

@@ -1,10 +1,10 @@
 { config, pkgs, ... }:
 
 {
-  networking.hostName = "tauron";
+  system.stateVersion = "23.11";
 
+  networking.hostName = "tauron";
   services.fstrim.enable = true;
-  security.pam.enableFscrypt = true;
 
   services.logind.extraConfig = ''
     LidSwitchIgnoreInhibited=yes
@@ -14,23 +14,23 @@
 
   services.keyd = {
     enable = true;
-    settings = {
+    keyboards.default.settings = {
       main = {
         capslock = "overload(control, esc)";
-        leftalt = "layer(leftalt)";
-        leftmeta = "layer(leftmeta)";
+	space = "overload(symbols, space)";
       };
-      "leftalt:A" = {
+      "symbols" = {
         h = "left";
         j = "down";
         k = "up";
         l = "right";
-      };
-      "leftmeta:M" = {
-        h = "home";
-        j = "pagedown";
-        k = "pageup";
-        l = "end";
+
+	p = "pageup";
+	n = "pagedown";
+
+	a = "home";
+	e = "end";
+
         s = "macro(M-right 10ms A-tab 10ms M-left 10ms A-tab)";
       };
     };

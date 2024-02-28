@@ -77,7 +77,6 @@
     obs-studio # streaming & video recording
     pdfarranger # merge/split/reorder pdfs
     spotify # music streaming
-    zoom-us # videoconferencing
 
     ## chat software
     discord
