@@ -11,6 +11,7 @@
   environment.systemPackages = with pkgs; [
     ## language servers
     bear # for generating compile_commands.json
+    clang # for compiling treesitter grammers
     clang-tools # clangd for C
     elmPackages.elm-language-server
     lua-language-server
