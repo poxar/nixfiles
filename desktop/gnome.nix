@@ -25,7 +25,6 @@
     gnome-solanum # pomodoro timer
     gnome.dconf-editor # graphical dconf editor
     gnome.gnome-tweaks # some additional gnome settings
-    khronos # time tracker
     metadata-cleaner # clean metadata from media files
     pika-backup # borg backup frontend
     video-trimmer # simpler than raw ffmpeg sometimes
@@ -44,6 +43,12 @@
   ];
 
   environment.gnome.excludePackages = with pkgs; [
+    gnome-tour
+    gnome.cheese
+    gnome.gnome-calendar
+    gnome.gnome-contacts
+    gnome.gnome-maps
     gnome.gnome-music
+    gnome.yelp
   ];
 }

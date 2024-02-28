@@ -36,6 +36,7 @@
     autossh # automatically reconnect to ssh
     dateutils # various tools for date manipulation
     ddcutil # monitor configuration
+    handlr # better default application manager
     hyperfine # benchmarking tool
     pandoc # document converter
     pciutils # various programs to deal with pci hardware
@@ -67,10 +68,8 @@
     python3Full
 
     ## gui software
-    chromium # browser
     firefox-wayland # browser
     foliate # ebook reader
-    gnucash # accounting software
     inkscape # vector graphic editing
     libreoffice-fresh # documents & co
     nextcloud-client # file synchronisation
