@@ -2,13 +2,12 @@
 
 {
   environment.systemPackages = with pkgs; [
-    alacritty
+    # force alacritty into xwayland to fix various issues with gnome/wayland
+    (unstable.alacritty.overrideAttrs ( finalAttrs: previousAttrs: {
+      cargoBuildNoDefaultFeatures = true;
+      cargoBuildFeatures = [ "x11" ];
+    }))
     # we need xclip to support copy paste in xwayland
     xclip
   ];
-
-  # force alacritty into xwayland to fix various issues with gnome/wayland
-  environment.variables = {
-    WINIT_UNIX_BACKEND = "x11";
-  };
 }
