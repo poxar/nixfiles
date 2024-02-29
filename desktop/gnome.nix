@@ -43,9 +43,10 @@
   ];
 
   environment.gnome.excludePackages = with pkgs; [
+    epiphany
     gnome-tour
     gnome.cheese
-    gnome.gnome-calendar
+    gnome.geary
     gnome.gnome-contacts
     gnome.gnome-maps
     gnome.gnome-music
