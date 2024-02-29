@@ -28,8 +28,8 @@
   programs.git.lfs.enable = true;
 
   environment.systemPackages = with pkgs; [
-    atuin # shared history forever
     age # modern encryption tool
+    atuin # shared history forever
     bc # calculator
     bind # various network tools (dig)
     colordiff # colorful diff
@@ -55,8 +55,8 @@
     sqlite # simple database
     stow # symlink farm manager
     tmux # terminal multiplexer
-    tmuxp # tmux session manager
     tmuxPlugins.better-mouse-mode
+    tmuxp # tmux session manager
     tree # show directory trees
     up # ultimate plumber - pipe visualisation
     wormhole-william # end-to-end encrypted file transfers
