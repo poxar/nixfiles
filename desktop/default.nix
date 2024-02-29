@@ -63,8 +63,19 @@
     universal-ctags # a maintained ctags
 
     ## languages & tooling
-    # languages I want to always have access to
+    # python
     python3Full
+    # rust
+    cargo
+    cargo-audit
+    cargo-outdated
+    cargo-watch
+    clang
+    clippy
+    gcc
+    mold
+    rustc
+    rustfmt
 
     ## gui software
     firefox-wayland # browser
