@@ -37,6 +37,7 @@
     handlr # better default application manager
     hyperfine # benchmarking tool
     pandoc # document converter
+    pavucontrol # audio settings
     pciutils # various programs to deal with pci hardware
     pwgen # password generator
     rbw # command line bitwarden client
