@@ -39,6 +39,7 @@
     gnumake # venerable build tool and task runner
     htop # system monitor
     iperf # measure network bandwidth
+    lf # simple terminal file browser
     libarchive # provides bsdtar
     lsof # list open files and sockets
     moreutils # additional tooling
