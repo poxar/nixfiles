@@ -48,6 +48,7 @@
     youtube-dl # youtube downloader
 
     ## development tools
+    ansible # infrastructure automation
     direnv # automatic commands per directory
     entr # automatically run commands when files change
     httpie # cli http api client
