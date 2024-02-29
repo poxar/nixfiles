@@ -7,6 +7,7 @@
       nup = "nix flake update && sudo nixos-rebuild --upgrade boot";
       nrs = "sudo nixos-rebuild switch";
       nrb = "sudo nixos-rebuild boot";
+      ns = "nix-shell --run fish -p";
       usenix = "echo 'use nix' >> .envrc && direnv allow";
       useflake = "echo 'use flake' >> .envrc && direnv allow";
     };
