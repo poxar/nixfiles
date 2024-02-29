@@ -13,8 +13,6 @@
       ./alacritty.nix
     ];
 
-  boot.plymouth.enable = true;
-
   networking.networkmanager.enable = true;
   networking.firewall.allowedTCPPorts = [ 22 ];
 
