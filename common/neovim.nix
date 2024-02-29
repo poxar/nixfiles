@@ -13,14 +13,9 @@
     bear # for generating compile_commands.json
     clang # for compiling treesitter grammers
     clang-tools # clangd for C
-    elmPackages.elm-language-server
     lua-language-server
     marksman # markdown lsp
-    nodePackages.bash-language-server
     nodePackages.typescript-language-server
-    nodePackages.vim-language-server
-    nodePackages.vue-language-server
-    phpactor
     proselint # text linter
     pyright # python
     python311Packages.python-lsp-server
