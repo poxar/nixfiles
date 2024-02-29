@@ -28,6 +28,7 @@
   programs.git.lfs.enable = true;
 
   environment.systemPackages = with pkgs; [
+    atuin # shared history forever
     age # modern encryption tool
     bc # calculator
     bind # various network tools (dig)
