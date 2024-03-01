@@ -51,7 +51,6 @@
     youtube-dl # youtube downloader
 
     ## development tools
-    ansible # infrastructure automation
     entr # automatically run commands when files change
     httpie # cli http api client
     jq # cli json tool
