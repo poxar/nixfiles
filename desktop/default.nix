@@ -28,6 +28,8 @@
   services.tailscale.enable = true;
   services.fwupd.enable = true;
 
+  programs.direnv.enable = true;
+
   environment.systemPackages = with pkgs; [
     ## various tools
     acpi # battery status
@@ -50,7 +52,6 @@
 
     ## development tools
     ansible # infrastructure automation
-    direnv # automatic commands per directory
     entr # automatically run commands when files change
     httpie # cli http api client
     jq # cli json tool
