@@ -82,11 +82,17 @@
     firefox-wayland # browser
     foliate # ebook reader
     inkscape # vector graphic editing
-    libreoffice-fresh # documents & co
     nextcloud-client # file synchronisation
     obs-studio # streaming & video recording
     pdfarranger # merge/split/reorder pdfs
     spotify # music streaming
+
+    ## office
+    hunspell
+    hunspellDicts.de_DE
+    hunspellDicts.en_GB-large
+    hunspellDicts.en_US-large
+    libreoffice-fresh
 
     ## chat software
     discord
