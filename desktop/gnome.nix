@@ -28,9 +28,9 @@
     gnome.gnome-tweaks # some additional gnome settings
     metadata-cleaner # clean metadata from media files
     pika-backup # borg backup frontend
+    pinentry-gnome # gnomes pinentry implementation
     video-trimmer # simpler than raw ffmpeg sometimes
     warp # graphical wormhole implementation
-    pinentry-gnome # gnomes pinentry implementation
 
     # make qt applications look like gnome
     adwaita-qt
