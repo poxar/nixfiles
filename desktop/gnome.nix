@@ -21,6 +21,7 @@
 
   environment.systemPackages = with pkgs; [
     amberol # music player
+    celluloid # video player
     eyedropper # color picker
     gnome-solanum # pomodoro timer
     gnome.dconf-editor # graphical dconf editor
