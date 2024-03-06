@@ -12,6 +12,9 @@
     HandleLidSwitchExternalPower=suspend-then-hibernate
   '';
 
+  # ambient light sensor
+  hardware.sensor.iio.enable = true;
+
   services.keyd = {
     enable = true;
     keyboards.default.settings = {
