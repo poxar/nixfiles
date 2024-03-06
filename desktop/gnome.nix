@@ -37,7 +37,6 @@
     adwaita-qt6
 
     # gnome extensions
-    gnomeExtensions.espresso # keep the screen alive
     gnomeExtensions.run-or-raise # mighty shortcut manager
     gnomeExtensions.appindicator # old school tray icons
     gnomeExtensions.just-perfection # tweak the visuals
