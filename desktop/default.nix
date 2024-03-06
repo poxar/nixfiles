@@ -38,6 +38,7 @@
     ddcutil # monitor configuration
     handlr # better default application manager
     hyperfine # benchmarking tool
+    lm_sensors # read sensor values
     pandoc # document converter
     pavucontrol # audio settings
     pciutils # various programs to deal with pci hardware
