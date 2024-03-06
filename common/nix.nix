@@ -1,3 +1,5 @@
+{ config, pkgs, ... }:
+
 {
   programs.command-not-found.enable = true;
 
@@ -16,4 +18,7 @@
     dates = "weekly";
     options = "--delete-older-than 30d";
   };
+
+  # nix cli helper
+  environment.systemPackages = [ pkgs.unstable.nh ];
 }
