@@ -15,6 +15,11 @@
   # ambient light sensor
   hardware.sensor.iio.enable = true;
 
+  services.undervolt = {
+    enable = true;
+    coreOffset = -85;
+  };
+
   services.keyd = {
     enable = true;
     keyboards.default.settings = {
