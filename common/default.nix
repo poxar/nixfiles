@@ -34,6 +34,7 @@
     nmap # port scanner
     p7zip # 7z compression
     pigz # parallel gzip
+    pistol # file previewer
     rage # another modern encryption tool
     ripgrep # opinionated grep replacement
     sd # opinionated sed replacement
