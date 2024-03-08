@@ -40,6 +40,7 @@
     gnomeExtensions.run-or-raise # mighty shortcut manager
     gnomeExtensions.appindicator # old school tray icons
     gnomeExtensions.just-perfection # tweak the visuals
+    gnomeExtensions.blur-my-shell # make overview more appealing
   ];
 
   environment.gnome.excludePackages = with pkgs; [
