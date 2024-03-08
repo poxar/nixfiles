@@ -16,6 +16,8 @@
   hardware.cpu.amd.updateMicrocode = true;
   services.fstrim.enable = true;
 
+  services.xserver.displayManager.gdm.autoSuspend = false;
+
   imports =
     [
       ./hardware-configuration.nix
