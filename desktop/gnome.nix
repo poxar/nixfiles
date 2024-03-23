@@ -26,6 +26,7 @@
     gnome-solanum # pomodoro timer
     gnome.dconf-editor # graphical dconf editor
     gnome.gnome-tweaks # some additional gnome settings
+    kooha # screen recorder
     metadata-cleaner # clean metadata from media files
     pika-backup # borg backup frontend
     pinentry-gnome # gnomes pinentry implementation
