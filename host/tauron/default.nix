@@ -17,7 +17,8 @@
 
   services.undervolt = {
     enable = true;
-    coreOffset = -85;
+    coreOffset = -95;
+    gpuOffset = -50;
   };
 
   services.keyd = {
