@@ -23,6 +23,7 @@
     amberol # music player
     celluloid # video player
     eyedropper # color picker
+    fragments # bittorrent client
     gnome-obfuscate # censor private information in media files
     gnome-solanum # pomodoro timer
     gnome.dconf-editor # graphical dconf editor
