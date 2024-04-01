@@ -35,6 +35,8 @@
     video-trimmer # simpler than raw ffmpeg sometimes
     warp # graphical wormhole implementation
 
+    unstable.parabolic # graphical interface to yt-dlp
+
     # make qt applications look like gnome
     adwaita-qt
     adwaita-qt6
