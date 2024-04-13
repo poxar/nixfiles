@@ -38,6 +38,7 @@
     rage # another modern encryption tool
     ripgrep # opinionated grep replacement
     sd # opinionated sed replacement
+    signify # modern cryptographic signatures
     skim # fuzzy finder
     sqlite # simple database
     stow # symlink farm manager
