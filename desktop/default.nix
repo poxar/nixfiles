@@ -60,6 +60,7 @@
     mitmproxy # network debugging
     mosquitto # mqtt cli tools
     picocom # serial connection terminal emulator
+    scc # sloc tool and cost estimation
     tig # git-log tui
     tokei # sloc tool
     universal-ctags # a maintained ctags
