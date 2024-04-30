@@ -16,7 +16,6 @@
     lua-language-server
     marksman # markdown lsp
     nodePackages.typescript-language-server
-    nodePackages.vim-language-server
     pyright # python
     python311Packages.python-lsp-server
     ruff-lsp # python
@@ -27,6 +26,5 @@
     mypy # python
     vim-vint # vimlang
     shellcheck # sh/bash
-    unstable.typos-lsp # spelling in code
   ];
 }
