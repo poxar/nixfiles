@@ -16,10 +16,16 @@
     lua-language-server
     marksman # markdown lsp
     nodePackages.typescript-language-server
-    proselint # text linter
     pyright # python
     python311Packages.python-lsp-server
     ruff-lsp # python
     rust-analyzer
+
+    ## linters
+    ruff # python
+    mypy # python
+    vim-vint # vimlang
+    shellcheck # sh/bash
+    unstable.typos-lsp # spelling in code
   ];
 }
