@@ -33,6 +33,7 @@
   environment.systemPackages = with pkgs; [
     ## various tools
     acpi # battery status
+    aria # resumable download utility
     autossh # automatically reconnect to ssh
     dateutils # various tools for date manipulation
     ddcutil # monitor configuration
