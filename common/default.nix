@@ -18,7 +18,6 @@
     atuin # shared history forever
     bc # calculator
     bind # various network tools (dig)
-    colordiff # colorful diff
     curl # http toolchain
     fd # opinionated find replacement
     file # inspect file type
