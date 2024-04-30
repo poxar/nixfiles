@@ -54,6 +54,7 @@
 
     ## development tools
     entr # automatically run commands when files change
+    gron # make json greppable
     httpie # cli http api client
     jq # cli json tool
     lazygit # git tui
