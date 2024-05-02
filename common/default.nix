@@ -20,6 +20,7 @@
     bind # various network tools (dig)
     curl # http toolchain
     fd # opinionated find replacement
+    fend # calculator with unit conversion
     file # inspect file type
     gnumake # venerable build tool and task runner
     htop # system monitor
