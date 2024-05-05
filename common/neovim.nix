@@ -9,22 +9,37 @@
   };
 
   environment.systemPackages = with pkgs; [
-    ## language servers
-    bear # for generating compile_commands.json
-    clang # for compiling treesitter grammers
-    clang-tools # clangd for C
-    lua-language-server
-    marksman # markdown lsp
+    # c family
+    bear
+    clang
+    clang-tools
+
+    # html/css/js/ts
+    nodePackages.prettier
     nodePackages.typescript-language-server
-    pyright # python
-    python311Packages.python-lsp-server
-    ruff-lsp # python
+    vscode-langservers-extracted
+
+    # rust
     rust-analyzer
 
-    ## linters
-    ruff # python
-    mypy # python
-    vim-vint # vimlang
-    shellcheck # sh/bash
+    # python
+    mypy
+    ruff
+    ruff-lsp
+
+    # sh/bash
+    nodePackages.bash-language-server
+    shellcheck
+    shfmt
+
+    # neovim
+    lua-language-server
+    vim-vint
+
+    # markdown
+    marksman
+
+    # language/spelling
+    nodePackages.alex
   ];
 }
