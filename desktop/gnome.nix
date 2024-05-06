@@ -36,6 +36,7 @@
     warp # graphical wormhole implementation
 
     unstable.parabolic # graphical interface to yt-dlp
+    unstable.tuba # mastodon client
 
     # make qt applications look like gnome
     adwaita-qt
